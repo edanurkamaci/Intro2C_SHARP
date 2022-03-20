@@ -19,7 +19,7 @@ namespace Media_Player
 
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.URL = "C:\\Users\\kamac\\Downloads\\Nirvana - Something In The Way  The Batman .mp3";
+            axWindowsMediaPlayer1.URL = "C:\\Users\\kamac\\OneDrive\\Masaüstü\\MURAT YÜCEDAĞ C# LESSONS\\Media Player\\Media Player\\Nirvana - Something In The Way  The Batman .mp3";
         }
     }
 }
