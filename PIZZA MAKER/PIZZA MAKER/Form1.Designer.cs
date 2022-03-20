@@ -29,7 +29,6 @@ namespace PIZZA_MAKER
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pizza));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.nameText = new System.Windows.Forms.TextBox();
@@ -53,6 +52,12 @@ namespace PIZZA_MAKER
             this.Salami = new System.Windows.Forms.CheckBox();
             this.clear = new System.Windows.Forms.Button();
             this.informations = new System.Windows.Forms.GroupBox();
+            this.addressBox = new System.Windows.Forms.ListBox();
+            this.numbBox = new System.Windows.Forms.ListBox();
+            this.nameBox = new System.Windows.Forms.ListBox();
+            this.ingreBox = new System.Windows.Forms.ListBox();
+            this.drBox = new System.Windows.Forms.ListBox();
+            this.sizeBox = new System.Windows.Forms.ListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.drinkBox = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -60,12 +65,6 @@ namespace PIZZA_MAKER
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.remain = new System.Windows.Forms.Label();
-            this.sizeBox = new System.Windows.Forms.ListBox();
-            this.drBox = new System.Windows.Forms.ListBox();
-            this.ingreBox = new System.Windows.Forms.ListBox();
-            this.nameBox = new System.Windows.Forms.ListBox();
-            this.numbBox = new System.Windows.Forms.ListBox();
-            this.addressBox = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.informations.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +77,7 @@ namespace PIZZA_MAKER
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(504, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 61);
+            this.label1.Size = new System.Drawing.Size(272, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "PIZZA HOUSE";
             // 
@@ -381,6 +380,67 @@ namespace PIZZA_MAKER
             this.informations.TabStop = false;
             this.informations.Text = "INFORMATIONS";
             // 
+            // addressBox
+            // 
+            this.addressBox.BackColor = System.Drawing.Color.White;
+            this.addressBox.FormattingEnabled = true;
+            this.addressBox.ItemHeight = 35;
+            this.addressBox.Location = new System.Drawing.Point(430, 67);
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(182, 144);
+            this.addressBox.TabIndex = 23;
+            // 
+            // numbBox
+            // 
+            this.numbBox.BackColor = System.Drawing.Color.White;
+            this.numbBox.FormattingEnabled = true;
+            this.numbBox.ItemHeight = 35;
+            this.numbBox.Location = new System.Drawing.Point(223, 67);
+            this.numbBox.MultiColumn = true;
+            this.numbBox.Name = "numbBox";
+            this.numbBox.Size = new System.Drawing.Size(182, 144);
+            this.numbBox.TabIndex = 22;
+            // 
+            // nameBox
+            // 
+            this.nameBox.BackColor = System.Drawing.Color.White;
+            this.nameBox.FormattingEnabled = true;
+            this.nameBox.ItemHeight = 35;
+            this.nameBox.Location = new System.Drawing.Point(19, 67);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(182, 144);
+            this.nameBox.TabIndex = 21;
+            // 
+            // ingreBox
+            // 
+            this.ingreBox.BackColor = System.Drawing.Color.White;
+            this.ingreBox.FormattingEnabled = true;
+            this.ingreBox.ItemHeight = 35;
+            this.ingreBox.Location = new System.Drawing.Point(1050, 67);
+            this.ingreBox.Name = "ingreBox";
+            this.ingreBox.Size = new System.Drawing.Size(182, 144);
+            this.ingreBox.TabIndex = 20;
+            // 
+            // drBox
+            // 
+            this.drBox.BackColor = System.Drawing.Color.White;
+            this.drBox.FormattingEnabled = true;
+            this.drBox.ItemHeight = 35;
+            this.drBox.Location = new System.Drawing.Point(843, 67);
+            this.drBox.Name = "drBox";
+            this.drBox.Size = new System.Drawing.Size(182, 144);
+            this.drBox.TabIndex = 19;
+            // 
+            // sizeBox
+            // 
+            this.sizeBox.BackColor = System.Drawing.Color.White;
+            this.sizeBox.FormattingEnabled = true;
+            this.sizeBox.ItemHeight = 35;
+            this.sizeBox.Location = new System.Drawing.Point(636, 67);
+            this.sizeBox.Name = "sizeBox";
+            this.sizeBox.Size = new System.Drawing.Size(182, 144);
+            this.sizeBox.TabIndex = 18;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -452,73 +512,12 @@ namespace PIZZA_MAKER
             this.remain.TabIndex = 16;
             this.remain.Text = "80";
             // 
-            // sizeBox
-            // 
-            this.sizeBox.BackColor = System.Drawing.Color.White;
-            this.sizeBox.FormattingEnabled = true;
-            this.sizeBox.ItemHeight = 35;
-            this.sizeBox.Location = new System.Drawing.Point(636, 67);
-            this.sizeBox.Name = "sizeBox";
-            this.sizeBox.Size = new System.Drawing.Size(182, 144);
-            this.sizeBox.TabIndex = 18;
-            // 
-            // drBox
-            // 
-            this.drBox.BackColor = System.Drawing.Color.White;
-            this.drBox.FormattingEnabled = true;
-            this.drBox.ItemHeight = 35;
-            this.drBox.Location = new System.Drawing.Point(843, 67);
-            this.drBox.Name = "drBox";
-            this.drBox.Size = new System.Drawing.Size(182, 144);
-            this.drBox.TabIndex = 19;
-            // 
-            // ingreBox
-            // 
-            this.ingreBox.BackColor = System.Drawing.Color.White;
-            this.ingreBox.FormattingEnabled = true;
-            this.ingreBox.ItemHeight = 35;
-            this.ingreBox.Location = new System.Drawing.Point(1050, 67);
-            this.ingreBox.Name = "ingreBox";
-            this.ingreBox.Size = new System.Drawing.Size(182, 144);
-            this.ingreBox.TabIndex = 20;
-            // 
-            // nameBox
-            // 
-            this.nameBox.BackColor = System.Drawing.Color.White;
-            this.nameBox.FormattingEnabled = true;
-            this.nameBox.ItemHeight = 35;
-            this.nameBox.Location = new System.Drawing.Point(19, 67);
-            this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(182, 144);
-            this.nameBox.TabIndex = 21;
-            // 
-            // numbBox
-            // 
-            this.numbBox.BackColor = System.Drawing.Color.White;
-            this.numbBox.FormattingEnabled = true;
-            this.numbBox.ItemHeight = 35;
-            this.numbBox.Location = new System.Drawing.Point(223, 67);
-            this.numbBox.MultiColumn = true;
-            this.numbBox.Name = "numbBox";
-            this.numbBox.Size = new System.Drawing.Size(182, 144);
-            this.numbBox.TabIndex = 22;
-            // 
-            // addressBox
-            // 
-            this.addressBox.BackColor = System.Drawing.Color.White;
-            this.addressBox.FormattingEnabled = true;
-            this.addressBox.ItemHeight = 35;
-            this.addressBox.Location = new System.Drawing.Point(430, 67);
-            this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(182, 144);
-            this.addressBox.TabIndex = 23;
-            // 
             // pizza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Brown;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::PIZZA_MAKER.Properties.Resources.images;
             this.ClientSize = new System.Drawing.Size(1268, 808);
             this.Controls.Add(this.remain);
             this.Controls.Add(this.informations);
